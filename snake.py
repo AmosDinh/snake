@@ -126,7 +126,7 @@ class Snake:
                 )
             )
 
-    def grow(self, how_much: int):
+    def grow(self, how_much: int) -> None:
         self._grow += how_much
 
     def step(self, forbidden: List[Tuple[int, int]]) -> bool:
